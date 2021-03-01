@@ -15,7 +15,7 @@ interface AppProps {
 const Post: React.FC<AppProps> = ({ publishDate, title, description, author, link, image }) => {
   // let { file } = image
   return (
-    <Col md={4}>
+    <Col md={4} className={styles.boxWrap}>
       <Link href={link}>
         <Card className={styles.customCard}>
           <Card.Img className={styles.imageCard} variant="top" src={image} />
