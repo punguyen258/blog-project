@@ -46,7 +46,7 @@ const HomePage: React.FC<AppProps> = ({ posts }) => (
 
 export const getStaticProps = async () => {
   const res = await fetchEntries()
-  const posts = await res.map((post) => {
+  const posts = await res!.map((post) => {
     return post.fields
   })
 

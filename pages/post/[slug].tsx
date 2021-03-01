@@ -15,7 +15,7 @@ const StaticPropsDetail = ({ item }: Props) => {
 }
 export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetchEntries()
-  const posts = await res.map((post) => {
+  const posts = await res!.map((post) => {
     return post.fields
   })
   const paths = posts.map((post) => ({
@@ -26,9 +26,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const res = await fetchEntries()
-  console.log(res)
   const slug = params?.slug
-  const item = res.find((post) => post.fields.slug === String(slug))
+  const item = res!.find((post) => post.fields.slug === String(slug))
   return { props: { item } }
 }
 export default StaticPropsDetail
