@@ -120,3 +120,11 @@
     flex-direction: column;
   }
 }
+
+.customCard{
+  height: 100%
+}
+
+.imageCard {
+  height: 250px;
+}
