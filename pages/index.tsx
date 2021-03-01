@@ -39,14 +39,77 @@ const HomePage: React.FC<AppProps> = ({ posts }) => {
                     author={post.author}
                     link={`/post/${post.slug}/`}
                   />
-
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
+                  <Post key={index}
+                    publishDate={post.publishDate}
+                    title={post.title}
+                    description={post.description}
+                    image={urlImage}
+                    author={post.author}
+                    link={`/post/${post.slug}/`}
+                  />
                 </>
               )
             })}
           </Row>
         </Container>
       </div>
-      <Pagination total={10} sizes={10} />
+      <Pagination />
     </div>
   )
 }

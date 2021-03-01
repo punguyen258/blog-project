@@ -1,5 +1,5 @@
 import { Post } from '../interfaces'
-import { FacebookProvider, LoginButton, Comments, EmbeddedPost, Like, ShareButton } from 'react-facebook';
+import { FacebookProvider, Comments, EmbeddedPost } from 'react-facebook';
 
 type ListDetailProps = {
   item: Post;
@@ -13,8 +13,7 @@ const DetailPost = ({ item: post }: ListDetailProps) => {
       <p>{post.fields.tags}</p>
       <p>{post.fields.category}</p>
       <FacebookProvider appId="3879627655456478">
-        <Comments href="http://www.facebook.com" width="500" height="1000" />
-        <EmbeddedPost href="http://www.facebook.com" width="500" />
+        <Comments href={`https://blog-project-inky.vercel.app/post/${post.fields.slug}`} width="500" height="1000" />
       </FacebookProvider>
     </>
   )
