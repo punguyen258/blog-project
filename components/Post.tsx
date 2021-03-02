@@ -13,7 +13,6 @@ interface AppProps {
 }
 
 const Post: React.FC<AppProps> = ({ publishDate, title, description, author, link, image }) => {
-  // let { file } = image
   return (
     <Col md={4} className={styles.boxWrap}>
       <Link href={link}>
@@ -22,13 +21,14 @@ const Post: React.FC<AppProps> = ({ publishDate, title, description, author, lin
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
-              <p>{description}</p>
-              <span>{moment(publishDate).format('MM/DD/YYYY')}</span>
-              <p>{author}</p>
-
+              {description}
             </Card.Text>
-
-
+            <Card.Text>
+              {moment(publishDate).format('MM/DD/YYYY')}
+            </Card.Text>
+            <Card.Text>
+              {author}
+            </Card.Text>
           </Card.Body>
         </Card>
       </Link>

@@ -41,6 +41,18 @@ const HomePage: React.FC<AppProps> = ({ posts }) => {
         />
       </div>
 
+      <div className={styles.wrapper}>
+        <div className={styles.blockquote}>
+          Welcome to Hanoi, the capital of Vietnam.
+          Anyone who has ever visited Hanoi will probably tell you that it may be the most beautiful city in Asia.
+          Hanoi is famous over the world for its fantastic beauty, long history and unique culture.
+          If you come to Hanoi, don’t forget to visit Ho Chi Minh Mausoleum, Hoan Kiem Lake, Temple of Literature, the Old Quarter and so on.
+          You should also try its delicious street foods such as: “Pho“, “Bun Cha”, “Banh Mi Pate” or “Cha ca”. The weather in Hanoi is pleasant.
+          I really like the spring and the autumn so much because of good weather and beautiful color of trees.
+          More and more foreigners visit Hanoi every year, so what are you waiting for? Join us and discover it now!
+        </div>
+      </div>
+
       <div className={styles.postList}>
         <Container>
           <Row>
