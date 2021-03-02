@@ -43,6 +43,10 @@
   border: 1px solid #d3dce0;
 }
 
+.boxWrap {
+  margin-bottom: 50px;
+}
+
 .authorInfo {
   display: flex;
 }
@@ -64,9 +68,54 @@
   height: 100%;
   transition: all 0.5s ease-in;
   box-shadow: -10px 25px 50px rgb(0 0 0 / 30%);
+  cursor: pointer;
 }
 
 .customCard:hover {
   transition:700ms linear;
   transform: scale(1.1);
 }
+
+.blockquote {
+	font-weight: 100;
+	font-size: 24px;
+	max-width: 1200px;
+	line-height: 1.4;
+	position: relative;
+}
+
+.blockquote:before,
+.blockquote:after {
+	position: absolute;
+	color: #b4dc9f;
+	font-size: 120px;
+}
+
+.blockquote:before {
+  height: 10px;
+	content: '“';
+  left: -40px;
+  top: -40px;
+}
+
+.blockquote:after {
+  height: 10px;
+	content: '”';
+	right: -40px;
+}
+
+.wrapper {
+  font-family: 'Special Elite', cursive;
+	color: #3f3f5a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  margin: 100px 0 150px 0;
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+}
+
