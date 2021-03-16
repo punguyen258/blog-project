@@ -117,5 +117,15 @@
 
 .pagination {
   text-align: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
+
+.ant-pagination-item-active {
+  padding: 2px 10px;
+  border: 1px solid;
+}
+
+
 

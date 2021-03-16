@@ -6,7 +6,7 @@ import Typed from 'react-typed';
 import { Container, Row } from 'react-bootstrap';
 import { Pagination } from 'antd';
 import Link from 'next/link';
-import "antd/dist/antd.css";
+import Footer from '../components/Layout/Footer';
 interface AppProps {
   posts?: any;
 }
@@ -50,7 +50,7 @@ const HomePage: React.FC<AppProps> = ({ posts }) => {
           You should also try its delicious street foods such as: “Pho“, “Bun Cha”, “Banh Mi Pate” or “Cha ca”. The weather in Hanoi is pleasant.
           I really like the spring and the autumn so much because of good weather and beautiful color of trees.
           More and more foreigners visit Hanoi every year, so what are you waiting for? Join us and discover it now!
-        </div>
+          </div>
       </div>
 
       <div className={styles.postList}>
@@ -78,6 +78,8 @@ const HomePage: React.FC<AppProps> = ({ posts }) => {
         pageSize={pageSize}
         onChange={handleChangePage}
       />
+
+      <Footer />
     </div>
   )
 }

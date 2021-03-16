@@ -1,6 +1,7 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/globals.css';
+import "antd/dist/antd.css";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
