@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { Container, Row } from 'react-bootstrap'
 import styles from '../../styles/Layout.module.css'

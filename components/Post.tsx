@@ -1,5 +1,5 @@
 import moment from "moment"
-import { Button, Card, Col } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
@@ -12,7 +12,7 @@ interface AppProps {
   link: any;
 }
 
-const Post: React.FC<AppProps> = ({ publishDate, title, description, author, link, image }) => {
+const Post = ({ publishDate, title, description, author, link, image }: AppProps) => {
   return (
     <Col md={4} className={styles.boxWrap}>
       <Link href={link}>

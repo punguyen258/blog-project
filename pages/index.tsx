@@ -11,7 +11,7 @@ interface AppProps {
   posts?: any;
 }
 
-const HomePage: React.FC<AppProps> = ({ posts }) => {
+const HomePage = ({ posts }: AppProps) => {
   const pageSize = 8;
   const [minIndex, setMinIndex] = useState(0);
   const [maxIndex, setMaxIndex] = useState(pageSize);
