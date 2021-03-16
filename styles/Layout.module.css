@@ -1,8 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+.mb0 {
+  margin-bottom: 0;
+}
+
 .header{
   text-align: center;
+  box-shadow: 0 10px 6px -6px #c5c5c5;
+  -webkit-box-shadow: 0 10px 6px -6px #c5c5c5;
+  -moz-box-shadow: 0 10px 6px -6px #c5c5c5;
+  margin-bottom: 50px;
+}
+
+.menu {
+  padding: 8px 0 16px 0;  
+}
+
+.linkMenu {
+  color:#333;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 20px;
+  vertical-align: middle;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.linkMenu:hover {
+  color:#333;
+  opacity: 0.8;
+  border-bottom: 3px solid #333;
 }
 
 .logo {
   width: 300px;
   cursor: pointer
+}
+
+.footerDark {
+  padding:50px 0;
+  color:#f0f9ff !important;
+  background-color:#282d32;
+  margin-top: 40px;
+}
+
+.titleItem {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size: 24px;
+  color:#f0f9ff !important;
+}
+
+.social {
+  text-align:center;
+  margin : 60px auto 0 auto;
+}
+
+@media (max-width:991px) {
+  .social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+.icon {
+  width: 24px !important;
+  height: 24px;
+}
+
+.linkSocial:last-child {
+  margin-right: 0;
+}
+.linkSocial {
+  margin-right: 24px;
+  color:#f0f9ff !important;
+}
+
+.iconSmall {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+}
+
+.linkSocial:hover {
+  color: #fff;
+  opacity: 0.8;
 }
