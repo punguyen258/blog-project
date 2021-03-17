@@ -12,7 +12,7 @@ interface AppProps {
 }
 
 const HomePage = ({ posts }: AppProps) => {
-  const pageSize = 8;
+  const pageSize = 9;
   const [minIndex, setMinIndex] = useState(0);
   const [maxIndex, setMaxIndex] = useState(pageSize);
   const handleChangePage = (page) => {
@@ -55,7 +55,7 @@ const HomePage = ({ posts }: AppProps) => {
 
       <div className={styles.postList}>
         <Container>
-          <Row>
+          <Row className={styles.gallery}>
             {posts.map((post, index) =>
               index >= minIndex && index < maxIndex && (
                 <Post key={index}
